@@ -1,4 +1,4 @@
-namespace Issac.Setting
+namespace IssacUtil.Setting.ForCurve
 {
     public enum ECurveType
     {

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEditor;
 
-namespace Issac.Setting
+namespace IssacUtil.Setting.ForCurve
 {
     /*
     [CustomEditor (typeof(CurveSetting))]

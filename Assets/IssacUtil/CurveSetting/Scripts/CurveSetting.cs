@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Issac.Setting
+namespace IssacUtil.Setting.ForCurve
 {
-    [CreateAssetMenu(fileName = "CurveSetting", menuName = "IssacUtil/Settings/Create Color Setting")]
+    [CreateAssetMenu(fileName = "CurveSetting", menuName = "IssacUtil/Settings/Create Curve Setting")]
     public class CurveSetting : ScriptableObject
     {
         // --------------------------------------------------
@@ -32,7 +32,7 @@ namespace Issac.Setting
                 if (null == _instance)
                     Debug.LogError("[CurveSetting] Failed To Load Curve Setting File. Please Check If The File Exists.");
 
-                _instance.InitCurveInfoSet();
+                _instance._InitCurveInfoSet();
 
                 return _instance;
             }
@@ -84,7 +84,7 @@ namespace Issac.Setting
         /// <summary>
         /// This is a function that initializes the Curve Info.
         /// </summary>
-        private void InitCurveInfoSet()
+        private void _InitCurveInfoSet()
         {
             _infoSet?.Clear();
             _infoSet = new Dictionary<ECurveType, CurveInfo>();
